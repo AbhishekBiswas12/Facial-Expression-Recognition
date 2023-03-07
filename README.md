@@ -14,4 +14,4 @@ The types of expressions are:
 
 We have used the Facial-Expression-Recognition 2013 Dataset to train our model.
 
-We have achieved an accuracy of **61.54%** on the validation set.
+We have achieved an accuracy of **61.54%** and **61.74%** on validation set and test set respectively.
