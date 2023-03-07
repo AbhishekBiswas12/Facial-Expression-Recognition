@@ -2,6 +2,16 @@
 
 We have trained a Convolutional Neural Network to classify Facial Expressions. 
 
+Model Design:
+
+![alt text](https://github.com/AbhishekBiswas12/Facial-Expression-Recognition/blob/main/Model.jpg)
+
+**Total params:** 5,396,103
+
+**Trainable params:** 5,392,647
+
+**Non-trainable params:** 3,456
+
 The types of expressions are:
 
 1. 'sad'
