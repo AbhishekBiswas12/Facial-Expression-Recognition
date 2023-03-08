@@ -25,3 +25,7 @@ The types of expressions are:
 We have used the Facial-Expression-Recognition 2013 Dataset to train our model.
 
 We have achieved an accuracy of **61.54%** and **61.74%** on validation set and test set respectively.
+
+To use the Web Applization, visit the link below:
+
+https://abhishekbiswas12-hand-written-alphabets-recogniti-webapp-fiwpjh.streamlit.app/
