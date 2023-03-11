@@ -28,4 +28,4 @@ We have achieved an accuracy of **61.54%** and **61.74%** on validation set and 
 
 To use the Web Applization, visit the link below:
 
-https://abhishekbiswas12-hand-written-alphabets-recogniti-webapp-fiwpjh.streamlit.app/
+https://abhishekbiswas12-facial-expression-recognition-webapp-j6f71b.streamlit.app/
