@@ -26,6 +26,11 @@ We have used the Facial-Expression-Recognition 2013 Dataset to train our model.
 
 We have achieved an accuracy of **61.54%** and **61.74%** on validation set and test set respectively.
 
+**Tech Stack:**
+  1. Tensorflow
+  2. Python
+  3. Streamlit
+
 To use the Web Applization, visit the link below:
 
 https://abhishekbiswas12-facial-expression-recognition-webapp-j6f71b.streamlit.app/
