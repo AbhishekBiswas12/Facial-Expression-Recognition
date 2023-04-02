@@ -23,7 +23,7 @@ The types of expressions are:
 
 We have used the Facial-Expression-Recognition 2013 Dataset to train our model.
 
-We have achieved an accuracy of **81.44%**, **64.77%** and **63.75%** on train set,validation set and test set respectively.
+We have achieved an accuracy of **81.44%**, **64.77%** and **63.75%** on train set, validation set and test set respectively.
 
 **Tech Stack:**
   1. Tensorflow
