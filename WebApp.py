@@ -39,7 +39,7 @@ if file is not None:
 
 if st.button("camera"):
     file = st.camera_input("")
-#     file = file.get_value()
+    file = file.get_value()
 #     file = cv.imdecode(np.frombuffer(bytes_data, np.uint8), cv.IMREAD_COLOR)
     img = Image.open(file)
     st.image(img, width = 300 )
