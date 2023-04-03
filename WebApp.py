@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model
 from PIL import Image, ImageOps
 
 
-vgg16 = load_model('best.h5')
+vgg16 = load_model('best_model.h5')
 
 st.set_page_config(page_title='Facial Expression Recognition', layout='wide')
 st.header("Facial Expression Recognition")
