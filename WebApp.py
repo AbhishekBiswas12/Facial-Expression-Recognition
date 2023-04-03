@@ -31,6 +31,6 @@ if file is not None:
     img = Image.open(file)
     st.image(img, width = 300 )
     p = pred(img)
-    class_names = ['sad', 'happy', 'angry', 'surprised', 'fearful', 'neutral']
+    class_names = ['angry', 'fear', 'happy', 'neutral', 'sad', 'surprise']
     s = "This Image is Most Likely a : "+class_names[np.argmax(p)]
     st.success(s)
