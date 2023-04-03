@@ -19,6 +19,7 @@ file = st.file_uploader("Kindly upload an image here", type = ['jpg', 'png'])
 def pred(img):
     size = (48, 48,)
     img = ImageOps.fit(img, size, Image.ANTIALIAS)
+    img = ImageOps.grayscale(img)
     img = np.array(img)
     img = img/255.
     img_reshape = img[np.newaxis, ...]
