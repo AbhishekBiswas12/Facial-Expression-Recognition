@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 import h5py
 from tensorflow.keras.models import load_model
-# import cv2 as cv
+import cv2 as cv
 from PIL import Image, ImageOps
 
 
@@ -17,11 +17,6 @@ st.write("This is a Machine Learning Model Trained to recognise Facial Expressio
 file = st.file_uploader("Upload an Image", type = ['jpg', 'png'])
 
 st.write("OR")
-
-if st.button("camera"):
-    file = st.camera_input("")
-    file = file.get_value()
-
 
 def pred(img):
     size = (48, 48,)
@@ -41,3 +36,15 @@ if file is not None:
     class_names = ['angry', 'fear', 'happy', 'neutral', 'sad', 'surprise']
     s = "This Image is Most Likely a : "+class_names[np.argmax(p)]
     st.success(s)
+
+if st.button("camera"):
+    file = st.camera_input("")
+    file = file.get_value()
+    file = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv.IMREAD_COLOR)
+    img = Image.open(file)
+    st.image(img, width = 300 )
+    p = pred(img)
+    class_names = ['angry', 'fear', 'happy', 'neutral', 'sad', 'surprise']
+    s = "This Image is Most Likely a : "+class_names[np.argmax(p)]
+    st.success(s)
+    
