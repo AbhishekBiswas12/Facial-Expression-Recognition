@@ -10,11 +10,13 @@ from PIL import Image, ImageOps
 vgg16 = load_model('best_model.h5')
 
 st.set_page_config(page_title='Facial Expression Recognition', layout='wide')
-st.header("Facial Expression Recognition")
+st.header("how you doin'?")
 # st.footer("Project by Abhishek Biswas")
 st.write("This is a Machine Learning Model Trained to recognise Facial Expressions")
 
-file = st.file_uploader("Kindly upload an image here", type = ['jpg', 'png'])
+file = st.file_uploader("Upload an Image", type = ['jpg', 'png'])
+
+st.write("OR")
 
 def pred(img):
     size = (48, 48,)
