@@ -32,4 +32,4 @@ We have achieved an accuracy of **81.44%**, **64.77%** and **63.75%** on train s
 
 To use the Web Applization, visit the link below:
 
-https://abhishekbiswas12-facial-expression-recognition-webapp-j6f71b.streamlit.app/
+https://abhishekbiswas12-facial-expression-recognition-webapp-crlvvy.streamlit.app/
