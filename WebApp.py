@@ -39,12 +39,13 @@ if file is not None:
 
 if st.button("camera"):
     file = st.camera_input("")
-    file = file.get_value()
+#     file = file.get_value()
 #     file = cv.imdecode(np.frombuffer(bytes_data, np.uint8), cv.IMREAD_COLOR)
-    img = Image.open(file)
-    st.image(img, width = 300 )
-    p = pred(img)
-    class_names = ['angry', 'fear', 'happy', 'neutral', 'sad', 'surprise']
-    s = "This Image is Most Likely a : "+class_names[np.argmax(p)]
-    st.success(s)
+    if file is not None:
+        img = Image.open(file)
+        st.image(img, width = 300 )
+        p = pred(img)
+        class_names = ['angry', 'fear', 'happy', 'neutral', 'sad', 'surprise']
+        s = "This Image is Most Likely a : "+class_names[np.argmax(p)]
+        st.success(s)
     
