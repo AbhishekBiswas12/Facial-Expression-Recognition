@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 import h5py
 from tensorflow.keras.models import load_model
-import cv2 as cv
+# import cv2 as cv
 from PIL import Image, ImageOps
 
 
@@ -39,8 +39,8 @@ if file is not None:
 
 if st.button("camera"):
     file = st.camera_input("")
-    file = file.get_value()
-    file = cv.imdecode(np.frombuffer(bytes_data, np.uint8), cv.IMREAD_COLOR)
+#     file = file.get_value()
+#     file = cv.imdecode(np.frombuffer(bytes_data, np.uint8), cv.IMREAD_COLOR)
     img = Image.open(file)
     st.image(img, width = 300 )
     p = pred(img)
